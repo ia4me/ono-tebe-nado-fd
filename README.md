@@ -1,3 +1,1 @@
-### Project  Ono tebe nado ?
-
-Верстка по заданию.
+https://github.com/ia4me/ono-tebe-nado-fd
