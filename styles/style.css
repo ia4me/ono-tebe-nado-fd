@@ -86,13 +86,14 @@ address {
   z-index: 2;
 }
 .cover__banner-title {
+  padding-top: 160px;
+  padding-left: 50px;
+  padding-right: 50px;
   display: flex;
   flex-direction: column;
   gap: 20px;
   justify-content: center;
-  padding-top: 160px;
-  padding-left: 50px;
-  padding-right: 50px;
+  
 }
 
 .span_text {
@@ -113,13 +114,13 @@ address {
   text-align: right;
 }
 .cover__description {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding-left: 50px;
   padding-right: 50px;
   padding-bottom: 50px;
   padding-top: 104px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   font-size: 22px;
   text-transform: uppercase;
   word-spacing: 20px;
