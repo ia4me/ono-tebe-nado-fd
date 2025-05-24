@@ -23,7 +23,7 @@ address {
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
   width: 1100px;
-  height: 293px;
+  height: 295px;
   background-color: #ffff;
   padding: 0 52px;
 }
@@ -32,13 +32,11 @@ address {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
-  gap: 12px;
+  gap: 32px;
 }
 
 .header__links-list-item {
   text-decoration: underline;
-  list-style-position: inside;
   list-style-type: circle;
 }
 
@@ -54,11 +52,16 @@ address {
   width: 148px;
   height: 104px;
 }
+.header__logo img {
+  width: 147px;
+  padding: 0px 5px;
+}
 .header__address {
   display: flex;
   flex-direction: column;
   align-self: center;
   justify-self: end;
+  line-height: 25px;
 }
 .header__address address {
   width: 240px;
@@ -88,11 +91,12 @@ address {
 .cover__banner-title {
   padding-top: 160px;
   padding-left: 50px;
-  padding-right: 50px;
+  padding-right: 22px;
   display: flex;
   flex-direction: column;
   gap: 20px;
   justify-content: center;
+  letter-spacing: 30px;
 }
 
 .span_text {
@@ -125,18 +129,21 @@ address {
   word-spacing: 20px;
   color: #ffff;
 }
+.cover__description p {
+  word-spacing: 19px;
+}
 .lots {
   padding: 0 24px;
   margin-top: 180px;
 }
 .lots__container {
   display: grid;
-  grid-template-columns: auto auto auto;
-  gap: 24px;
+  grid-template-columns: repeat(3, 334px);
+  gap: 25px;
 }
 .lots__item {
   display: flex;
-  gap: 28px;
+  gap: 43px;
   flex-direction: column;
   justify-content: space-between;
   background-size: cover;
@@ -146,6 +153,7 @@ address {
 .lots__more {
   padding-left: 40px;
   padding-top: 32px;
+  font-size: 20px;
 }
 .lots__cards-film {
   background-image: url(/images/card-lot-01.jpg);
@@ -186,12 +194,14 @@ address {
   padding-top: 120px;
   padding-right: 24px;
   display: flex;
-  gap: 72px;
+  gap: 74px;
 }
 .about__description-block {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  font-size: 20px;
+  line-height: 24px;
 }
 .about__logo {
   padding-left: 48px;
@@ -211,9 +221,9 @@ address {
   padding-top: 132px;
 }
 .footer {
-  padding-top: 180px;
+  padding-top: 184px;
   padding-left: 52px;
-  padding-right: 52px;
+  padding-right: 50px;
   padding-bottom: 80px;
   display: flex;
   flex-direction: row;
@@ -223,6 +233,7 @@ address {
 .footer__address {
   display: flex;
   flex-direction: column;
+  gap: 4px;
 }
 .footer__menu {
   display: flex;
