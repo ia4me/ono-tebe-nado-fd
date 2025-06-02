@@ -1,13 +1,13 @@
 body {
   font-size: 18px;
-  font-family: "Raleway";
+  font-family: "Raleway" "Arial", "Helvetica", sans-serif;
   font-weight: 400;
 }
+
 button {
   cursor: pointer;
   padding: 12px 32px;
-
-  font-family: "Raleway";
+  font-family: "Raleway" "Arial", "Helvetica", sans-serif;
   font-weight: 500;
   font-size: 22px;
   text-transform: uppercase;
@@ -15,17 +15,18 @@ button {
   color: #ffff;
   border: 1px solid white;
 }
+
 address {
   font-style: normal;
 }
+
 .header {
+  padding: 96px 52px;
+  width: 1100px;
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  width: 1100px;
-  height: 295px;
   background-color: #ffff;
-  padding: 0 52px;
 }
 
 .header__links-list {
@@ -43,6 +44,7 @@ address {
 .header__links-list-item_no-bullit {
   list-style-type: none;
 }
+
 .header__link_active {
   text-decoration: none;
 }
@@ -52,42 +54,48 @@ address {
   width: 148px;
   height: 104px;
 }
+
 .header__logo img {
   width: 147px;
   padding: 0px 5px;
 }
-.header__address {
+address {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-self: center;
-  justify-self: end;
   line-height: 25px;
 }
-.header__address address {
+
+.header__address {
+  justify-self: end;
   width: 240px;
 }
+
 .cover {
   display: grid;
-  background-image: url(/images/cover.jpg);
+  background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
+
 .overlay {
   position: relative;
 }
+
 .overlay::after {
   position: absolute;
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.6);
-  width: 100%;
-  height: 100%;
+  inset: 0;
   content: "";
 }
 .cover *,
 .lots__item * {
   z-index: 2;
 }
+
 .cover__banner-title {
   padding-top: 160px;
   padding-left: 50px;
@@ -103,7 +111,7 @@ address {
   display: block;
   text-align: left;
   font-weight: 700;
-  font-size: 100px;
+  font-size: 67px;
   color: #ffff;
 }
 
@@ -116,6 +124,7 @@ address {
   display: block;
   text-align: right;
 }
+
 .cover__description {
   padding-left: 50px;
   padding-right: 50px;
@@ -129,18 +138,22 @@ address {
   word-spacing: 20px;
   color: #ffff;
 }
+
 .cover__description p {
   word-spacing: 19px;
 }
+
 .lots {
   padding: 0 24px;
   margin-top: 180px;
 }
+
 .lots__container {
   display: grid;
   grid-template-columns: repeat(3, 334px);
   gap: 25px;
 }
+
 .lots__item {
   display: flex;
   gap: 43px;
@@ -150,20 +163,25 @@ address {
   background-repeat: no-repeat;
   background-position: center;
 }
+
 .lots__more {
   padding-left: 40px;
   padding-top: 32px;
   font-size: 20px;
 }
+
 .lots__cards-film {
-  background-image: url(/images/card-lot-01.jpg);
+  background-image: url(../images/card-lot-01.jpg);
 }
+
 .lots__cards-book {
-  background-image: url(/images/card-lot-02.jpg);
+  background-image: url(../images/card-lot-02.jpg);
 }
+
 .lots__cards-picture {
-  background-image: url(/images/card-lot-03.jpg);
+  background-image: url(../images/card-lot-03.jpg);
 }
+
 .lots__title {
   padding-left: 40px;
   padding-bottom: 28px;
@@ -172,16 +190,18 @@ address {
   text-transform: uppercase;
   color: black;
 }
+
 .card-text {
   padding-top: 48px;
   padding-left: 40px;
   padding-right: 40px;
   font-weight: 700;
-  font-size: 22px;
+  font-size: 19px;
   text-transform: uppercase;
   text-decoration: underline;
   color: #ffff;
 }
+
 .content-text {
   padding-bottom: 48px;
   padding-left: 40px;
@@ -189,6 +209,7 @@ address {
   font-size: 20px;
   color: #ffff;
 }
+
 .about {
   padding-left: 24px;
   padding-top: 120px;
@@ -196,6 +217,7 @@ address {
   display: flex;
   gap: 74px;
 }
+
 .about__description-block {
   display: flex;
   flex-direction: column;
@@ -203,23 +225,28 @@ address {
   font-size: 20px;
   line-height: 24px;
 }
+
 .about__logo {
   padding-left: 48px;
   padding-top: 36px;
 }
+
 .about__logo img {
   width: 240px;
   height: 240px;
 }
+
 .about__title {
   padding-bottom: 100px;
   font-weight: 700;
   font-size: 40px;
   text-transform: uppercase;
 }
+
 .about__column {
   padding-top: 132px;
 }
+
 .footer {
   padding-top: 184px;
   padding-left: 52px;
@@ -230,20 +257,18 @@ address {
   justify-content: space-between;
   background-color: #ffff;
 }
-.footer__address {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
+
 .footer__menu {
   display: flex;
   flex-direction: column;
 }
+
 .footer__socials {
   display: flex;
   flex-direction: row;
   gap: 48px;
 }
+
 .footer__links-list {
   display: flex;
   flex-direction: column;
@@ -260,16 +285,7 @@ address {
   text-decoration: none;
 }
 
-.youtube img {
-  width: 48px;
-  height: 48px;
-}
-
-.vk img {
-  width: 48px;
-  height: 48px;
-}
-.pinterest img {
+.socials img {
   width: 48px;
   height: 48px;
 }

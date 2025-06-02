@@ -29,63 +29,74 @@
       <a class="header__logo">
         <img src="images/logo-black.svg" alt="Черный логотип" />
       </a>
-      <div class="header__address">
+      <address class="header__address">
         <a href="tel:+99995555555">+9 999 555 55 55</a>
         <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
-        <address>наб. Принсенграхт 263-<br />265, Амстердам</address>
-      </div>
+        <p>наб. Принсенграхт 263-<br />265, Амстердам</p>
+      </address>
     </header>
     <main>
       <section class="cover overlay">
         <div class="cover__banner-title">
-          <span class="span_text">ОНО</span>
-          <span class="span_text text-center">ТЕБЕ</span>
-          <span class="span_text text-right">НАДО</span>
+          <span class="span_text"><h1>ОНО</h1></span>
+          <span class="span_text text-center"><h1>ТЕБЕ</h1></span>
+          <span class="span_text text-right"><h1>НАДО</h1></span>
         </div>
         <div class="cover__description">
           <p>Аукцион вещей, в которые никто не верил</p>
-          <button>Сделать ставку</button>
+          <button type="button">Сделать ставку</button>
         </div>
       </section>
       <section class="lots">
         <h2 class="lots__title">Лоты</h2>
         <ul class="lots__container">
           <li class="lots__cards-film lots__item overlay">
-            <a href="#lot-film" class="card-text">
-              Фильм режиссёра, который бросил киношколу
+            <a href="#lots__cards-film" class="card-text">
+              <h3>Фильм режиссёра, который бросил киношколу</h3>
             </a>
             <article class="content-text">
-              Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
-              ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
+              <p>
+                Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
+                ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
+              </p>
             </article>
           </li>
           <li class="lots__cards-book lots__item overlay">
-            <a href="#lot-book" class="card-text">
-              Книга, где описан один скучный день из жизни рекламного агента
+            <a href="#lots__cards-book" class="card-text">
+              <h3>
+                Книга, где описан один скучный день из жизни рекламного агента
+              </h3>
             </a>
 
             <article class="content-text">
-              Объёмом почти в тысячу страниц. Иногда без знаков препинания и с
-              переходами на древнеанглийский. В ней одновременно рассказывается
-              о 16 июня 1904 года и об истории литературы, начиная с античных
-              времён. И это всё накладывается на эпическую поэму Гомера. Сколько
-              бы вы поставили на «Улисса» Джеймса Джойса?
+              <p>
+                Объёмом почти в тысячу страниц. Иногда без знаков препинания и с
+                переходами на древнеанглийский. В ней одновременно
+                рассказывается о 16 июня 1904 года и об истории литературы,
+                начиная с античных времён. И это всё накладывается на эпическую
+                поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса
+                Джойса?
+              </p>
             </article>
           </li>
           <li class="lots__cards-picture lots__item overlay">
-            <a href="#lot-picture" class="card-text">
-              Картина, которую повторит даже 5-летний сын маминой подруги
+            <a href="#lots__cards-picture" class="card-text">
+              <h3>
+                Картина, которую повторит даже 5-летний сын маминой подруги
+              </h3>
             </a>
             <article class="content-text">
-              Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то
-              похожее на инфузорию-туфельку. Никаких полей, лесов, котиков...
-              Сколько бы вы на такое поставили, если бы не знали, что это — одна
-              из революционных работ Кандинского?
+              <p>
+                Ну действительно, там линия, тут кружочек, а здесь и вовсе
+                что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
+                котиков... Сколько бы вы на такое поставили, если бы не знали,
+                что это — одна из революционных работ Кандинского?
+              </p>
             </article>
           </li>
         </ul>
         <div class="lots__more">
-          <a href="#more_lots">посмотреть больше</a>
+          <a href="#lots__more">посмотреть больше</a>
         </div>
       </section>
       <section class="about">
@@ -116,16 +127,14 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="footer__address">
+      <address>
         <a href="tel:+99995555555">+9 999 555 55 55</a>
         <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
-        <address>наб. Принсенграхт 263-265,<br />Амстердам</address>
-      </div>
+        <p>наб. Принсенграхт 263-265,<br />Амстердам</p>
+      </address>
       <nav class="footer__menu">
         <ul class="footer__links-list">
-          <li
-            class="footer__links-list-item footer__link_active"
-          >
+          <li class="footer__links-list-item footer__link_active">
             <a>главная</a>
           </li>
           <li class="footer__links-list-item">
@@ -137,13 +146,13 @@
         </ul>
       </nav>
       <div class="footer__socials">
-        <a href="#youtube" class="youtube">
+        <a href="#youtube" class="socials">
           <img src="/images/yt.svg" alt="ютуб" />
         </a>
-        <a href="#vk" class="vk">
+        <a href="#vk" class="socials">
           <img src="/images/vk.svg" alt="вкантакте" />
         </a>
-        <a href="#pinterest" class="pinterest">
+        <a href="#pinterest" class="socials">
           <img src="/images/pinterest.svg" alt="пинтерс" />
         </a>
       </div>
