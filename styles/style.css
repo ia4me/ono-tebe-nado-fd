@@ -154,7 +154,7 @@ button {
 
 .lots__item {
   display: flex;
-  gap: 45px;
+  gap: 43px;
   flex-direction: column;
   justify-content: space-between;
   background-size: cover;
